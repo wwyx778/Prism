@@ -1,0 +1,10 @@
+{
+  "extends": ["airbnb", "prettier"],
+  "root": true,
+  "env": {
+    "browser": true
+  },
+  "rules": {
+    "semi": "off"
+  }
+}
