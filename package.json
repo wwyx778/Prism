@@ -4,13 +4,13 @@
   "description": "CustomMirror",
   "main": "index.js",
   "dependencies": {
-    "@babel/runtime": "^7.14.0",
     "axios": "^0.21.1",
     "github-markdown-css": "^4.0.0",
     "raf": "^3.4.1",
     "virtual-scroll": "^2.1.1"
   },
   "devDependencies": {
+    "@babel/runtime": "^7.14.0",
     "@babel/core": "^7.14.3",
     "@babel/plugin-transform-runtime": "^7.14.3",
     "@babel/preset-env": "^7.14.2",
@@ -25,8 +25,6 @@
     "html-webpack-plugin": "^5.3.1",
     "less": "^4.1.1",
     "less-loader": "^9.0.0",
-    "mini-css-extract-plugin": "0.11.3",
-    "postcss-loader": "^5.3.0",
     "prettier": "^2.2.0",
     "source-map-loader": "^2.0.2",
     "style-loader": "^2.0.0",
@@ -34,9 +32,7 @@
     "webpack": "^5.37.1",
     "webpack-cli": "^4.7.0",
     "webpack-dev-server": "^3.11.2",
-    "@babel/runtime-corejs3": "^7.9.6",
-    "babel-eslint": "^10.1.0",
-    "core-js": "^3.6.5"
+    "babel-eslint": "^10.1.0"
   },
   "scripts": {
     "start": "NODE_ENV=development webpack && webpack serve --open ",

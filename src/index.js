@@ -1,4 +1,4 @@
-import 'github-markdown-css'; // eslint-disable-line import/no-unresolved
+import 'github-markdown-css';
 import './style/index.less';
 import $ from './helper/query';
 import API from './api';
@@ -48,6 +48,9 @@ mirror.getPosts = async function getPosts(type, { cursor, e }) {
   document.title = window.config.title;
   topBar.style.width = '100%';
 
+  scroller.stop(scroller.lastScrollY);
+  scroller.start(document.querySelector('.home'));
+
   const hash = cursor || '_';
 
   let posts = this.issues[hash];
@@ -78,8 +81,6 @@ mirror.getPosts = async function getPosts(type, { cursor, e }) {
 
   if (e && e.oldURL.indexOf('/posts/') > -1) {
     await switchToHome();
-    scroller.stop(scroller.lastScrollY);
-    scroller.start(document.querySelector('.home'));
   }
 };
 
@@ -193,5 +194,5 @@ window.console.log(
   '%c Github %c',
   'background:#24272A; color:#ffffff',
   '',
-  'https://github.com/LoeiFy/Mirror',
+  'https://github.com/wwyx778/CustomMirror',
 );

@@ -29,27 +29,37 @@ const config = {
         test: /\.js?$/,
         exclude: '/node_modules/',
         loader: 'babel-loader',
-        options: {
-          presets: ['@babel/preset-env'],
-        },
       },
       {
         test: /\.(css|less)$/i,
         use: ['style-loader', 'css-loader', 'less-loader'],
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        test: /\.(png|jpg|jpeg|gif)$/i,
         type: 'asset/inline',
+      },
+      {
+        test: /\.(svg)$/i,
+        type: 'asset/source',
       },
     ],
   },
-  // optimization: {
-  //   minimizer: [
-  //     new TerserPlugin({
-  //       extractComments: false,
-  //     }),
-  //   ],
-  // },
 };
+
+// if (isDev) {
+//   Object.assign(config, {
+//     devtool: 'inline-source-map',
+//   });
+// } else {
+//   Object.assign(config, {
+//     optimization: {
+//       minimizer: [
+//         new TerserPlugin({
+//           extractComments: false,
+//         }),
+//       ],
+//     },
+//   });
+// }
 
 module.exports = config;

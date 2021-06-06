@@ -13,19 +13,14 @@ const map = {
 
 const reverseMap = {};
 
-Object.keys(map).forEach((n) => {
+Object.keys(map).forEach(n => {
   const v = map[n];
   reverseMap[v] = n;
 });
 
 function getHost() {
   const { host = 'wwyx778.github.io' } = window.config;
-  const { port, hostname } = window.location;
-
-  if (port) {
-    return host;
-  }
-  return hostname;
+  return host;
 }
 
 export const en = (token, host = getHost()) => {
@@ -37,7 +32,7 @@ export const en = (token, host = getHost()) => {
   return m + b;
 };
 
-export const de = (mix) => {
+export const de = mix => {
   const b = window.btoa(getHost());
   return mix
     .split(b)[0]
