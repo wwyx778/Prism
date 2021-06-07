@@ -1,13 +1,13 @@
-import creator from '../helper/creator'
-import $ from '../helper/query'
+import creator from '../helper/creator';
+import $ from '../helper/query';
 
-export default function (msg) {
-  const frag = document.createDocumentFragment()
+export default function catchError(msg) {
+  const frag = document.createDocumentFragment();
   const div = creator('div', {
     id: 'error',
     onclick() {
-      $('html').removeClass('error')
-      $('body').remove(this)
+      $('html').removeClass('error');
+      $('body').remove(this);
     },
     innerHTML: `
       <div>
@@ -15,9 +15,9 @@ export default function (msg) {
         <p>${msg}</p>
       </div>
     `,
-  })
+  });
 
-  frag.appendChild(div)
-  $('html').addClass('error')
-  $('body').append(frag)
+  frag.appendChild(div);
+  $('html').addClass('error');
+  $('body').append(frag);
 }

@@ -1,7 +1,7 @@
-import getParams from './params'
+import getParams from './params';
 
 function hash() {
-  return window.location.hash.split('#')[1] || '/'
+  return window.location.hash.split('#')[1] || '/';
 }
 
 class Router {
@@ -40,8 +40,7 @@ class Router {
     this.page404 = fn;
   }
 
-  // eslint-disable-next-line class-methods-use-this
-  get route() {
+  static route() {
     return hash();
   }
 

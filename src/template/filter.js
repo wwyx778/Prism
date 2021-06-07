@@ -1,28 +1,28 @@
 function stringFormat(s) {
-  return s.toString().toLowerCase().trim()
+  return s.toString().toLowerCase().trim();
 }
 
 function numberFormat(s) {
-  return Number(stringFormat(s))
+  return Number(stringFormat(s));
 }
 
-let { authors, user, ignores } = window.config
+let { authors, user, ignores } = window.config;
 
-authors = (authors || '').split(',').map(author => stringFormat(author))
-user = stringFormat(user)
-ignores = (ignores || '').split(',').map(ignore => numberFormat(ignore))
+authors = (authors || '').split(',').map(author => stringFormat(author));
+user = stringFormat(user);
+ignores = (ignores || '').split(',').map(ignore => numberFormat(ignore));
 
 if (authors.indexOf(user) === -1) {
-  authors.push(user)
+  authors.push(user);
 }
 
-export default function (issues) {
+export default function issuesFilter(issues) {
   return issues.filter(({ node }) => {
     const {
       number,
       author: { login },
-    } = node
-    const author = stringFormat(login)
-    return authors.indexOf(author) > -1 && ignores.indexOf(number) === -1
-  })
+    } = node;
+    const author = stringFormat(login);
+    return authors.indexOf(author) > -1 && ignores.indexOf(number) === -1;
+  });
 }

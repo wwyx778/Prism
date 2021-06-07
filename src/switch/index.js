@@ -1,28 +1,28 @@
-import $ from '../helper/query'
-import sleep from './sleep'
+import $ from '../helper/query';
+import sleep from '../utils/sleep';
 
 export async function switchToHome() {
-  $('.single').addClass('page-moveto')
-  $('.home').addClass('page-movefrom')
+  $('.single').addClass('page-moveto');
+  $('.home').addClass('page-movefrom');
 
-  await sleep(600)
+  await sleep(600);
 
-  $('.single').removeClass('page-moveto').removeClass('page-current')
-  $('.home').removeClass('page-movefrom').addClass('page-current')
+  $('.single').removeClass('page-moveto').removeClass('page-current');
+  $('.home').removeClass('page-movefrom').addClass('page-current');
 
-  $('#comments').html('')
+  $('#comments').html('');
 
-  return Promise.resolve()
+  return Promise.resolve();
 }
 
 export async function switchToPost() {
-  $('.home').addClass('page-moveto')
-  $('.single').addClass('page-movefrom')
+  $('.home').addClass('page-moveto');
+  $('.single').addClass('page-movefrom');
 
-  await sleep(600)
+  await sleep(600);
 
-  $('.home').removeClass('page-moveto').removeClass('page-current')
-  $('.single').removeClass('page-movefrom').addClass('page-current')
+  $('.home').removeClass('page-moveto').removeClass('page-current');
+  $('.single').removeClass('page-movefrom').addClass('page-current');
 
-  return Promise.resolve()
+  return Promise.resolve();
 }

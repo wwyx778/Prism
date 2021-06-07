@@ -6,7 +6,7 @@ import Template from './template';
 import Router from './router';
 import Obeserver from './observer';
 import { switchToHome, switchToPost } from './switch';
-import sleep from './switch/sleep';
+import sleep from './utils/sleep';
 import Scroller from './scroller';
 import isMobile from './helper/mobile';
 
