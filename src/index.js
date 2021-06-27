@@ -181,7 +181,8 @@ observer.watch({
 });
 
 scroller.onScroll = (current, total) => {
-  if (!router.route.includes('/posts/')) {
+  const curRouter = window.location.hash.split('#')[1] || '/';
+  if (!curRouter.includes('/posts/')) {
     topBar.style.width = '100%';
   } else {
     topBar.style.width = `${(current / total) * 100}%`;

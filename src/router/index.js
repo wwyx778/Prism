@@ -40,9 +40,9 @@ class Router {
     this.page404 = fn;
   }
 
-  static route() {
-    return hash();
-  }
+  // get route() {
+  //   return hash;
+  // }
 
   start() {
     this.initial(hash());
