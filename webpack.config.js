@@ -1,6 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-// const TerserPlugin = require('terser-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 
 const isDev = process.env.NODE_ENV === 'development';
 
@@ -13,11 +13,6 @@ const config = {
     filename: '[name].[chunkhash].js',
     path: path.resolve(__dirname, 'dist/'),
     clean: true,
-  },
-  devtool: 'inline-source-map',
-  devServer: {
-    contentBase: 'dist',
-    hot: true,
   },
   resolve: {
     extensions: ['.js', '.json'],
@@ -46,20 +41,24 @@ const config = {
   },
 };
 
-// if (isDev) {
-//   Object.assign(config, {
-//     devtool: 'inline-source-map',
-//   });
-// } else {
-//   Object.assign(config, {
-//     optimization: {
-//       minimizer: [
-//         new TerserPlugin({
-//           extractComments: false,
-//         }),
-//       ],
-//     },
-//   });
-// }
+if (isDev) {
+  Object.assign(config, {
+    devtool: 'inline-source-map',
+    devServer: {
+      contentBase: 'dist',
+      hot: true,
+    },
+  });
+} else {
+  Object.assign(config, {
+    optimization: {
+      minimizer: [
+        new TerserPlugin({
+          extractComments: false,
+        }),
+      ],
+    },
+  });
+}
 
 module.exports = config;
