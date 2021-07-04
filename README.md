@@ -1,4 +1,9 @@
 <h1 align="center">🧊 Prism</h1>
+<p align="center">
+  <a href="https://github.com/wwyx778/Prism/blob/master/LICENSE">
+    <img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-yellow.svg" target="_blank" />
+  </a>
+</p>
 <div  align="center">一款基于 Github Issues 的博客工具，致力于 Zero Code 最简化搭建博客。</div>
 
 ## 📝 ChangeLog
