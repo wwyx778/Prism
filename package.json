@@ -1,7 +1,7 @@
 {
-  "name": "custommirror",
+  "name": "Prism",
   "version": "1.0.0",
-  "description": "CustomMirror",
+  "description": "Prism",
   "main": "index.js",
   "dependencies": {
     "axios": "^0.21.1",
@@ -42,12 +42,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wwyx778/CustomMirror.git"
+    "url": "git+https://github.com/wwyx778/Prism.git"
   },
   "author": "wwyx778",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/wwyx778/CustomMirror/issues"
+    "url": "https://github.com/wwyx778/Prism/issues"
   },
-  "homepage": "https://github.com/wwyx778/CustomMirror#readme"
+  "homepage": "https://github.com/wwyx778/Prism#readme"
 }
