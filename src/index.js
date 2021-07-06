@@ -195,5 +195,5 @@ window.console.log(
   '%c Github %c',
   'background:#24272A; color:#ffffff',
   '',
-  'https://github.com/wwyx778/CustomMirror',
+  'https://github.com/wwyx778/Prism',
 );
