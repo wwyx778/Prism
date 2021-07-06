@@ -6,7 +6,9 @@ import $ from '../helper/query';
 
 function post(issue) {
   const { number, title, createdAt } = issue;
-  const labels = issue.labels.edges.map(label => `<span>#${label.node.name}</span>`).join('');
+  const labels = issue.labels.edges
+    .map(label => `<span style="background-color:#${label.node.color}">${label.node.name}</span>`)
+    .join('');
 
   return creator('a', {
     className: 'post',
