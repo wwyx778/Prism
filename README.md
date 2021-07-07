@@ -10,6 +10,7 @@
 - [x] 改用 Webpack
 - [x] 滚动速度控制使用原生滚动 
 - [x] 自动展开 Comments
+- [x] Label 标签增加颜色
 
 ## 🔗 About
 本项目基于 [Mirror](https://github.com/LoeiFy/Mirror)，其创作者是 [LoeiFy](https://github.com/LoeiFy)。 
