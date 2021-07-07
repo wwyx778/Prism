@@ -18,11 +18,12 @@ class Issue {
     const { title, bodyHTML, updatedAt } = issue;
     const labels = issue.labels.edges
       .map(
-        label => `
+        label => `所属分类：
         <a
           target="_blank"
           href="https://github.com/${user}/${repository}/labels/${label.node.name}"
-        >#${label.node.name}</a>
+          style="background-color:#${label.node.color}"
+        >${label.node.name}</a>
       `,
       )
       .join('');
