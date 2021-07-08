@@ -6,6 +6,11 @@
 </p>
 <div  align="center">一款基于 Github Issues 的博客工具，致力于 Zero Code 最简化搭建博客。</div>
 
+## 🕹 Use
+1. 下载 Prism 的最新版本
+2. 获取 hash
+3. 修改 index.html
+
 ## 📝 Todo List
 - [x] 改用 Webpack
 - [x] 滚动速度控制使用原生滚动 
