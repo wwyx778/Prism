@@ -6,11 +6,13 @@
 </p>
 <div  align="center">一款基于 Github Issues 的博客工具，致力于 Zero Code 最简化搭建博客。</div>
 
-## 📝 ChangeLog
+## 📝 Todo List
 - [x] 改用 Webpack
 - [x] 滚动速度控制使用原生滚动 
 - [x] 自动展开 Comments
 - [x] Label 标签增加颜色
+- [ ] 增加查询功能
+- [ ] 增加 Label 筛选
 
 ## 🔗 About
 本项目基于 [Mirror](https://github.com/LoeiFy/Mirror)，其创作者是 [LoeiFy](https://github.com/LoeiFy)。 
