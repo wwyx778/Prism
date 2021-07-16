@@ -18,9 +18,9 @@
 ☘️ Label 标签增加颜色
 
 ## 📝 Todo List
-增加查询功能  
-增加 Label 筛选  
-<del>博客内添加 Comments</del>
+💡 增加查询功能  
+💡 增加 Label 筛选  
+🗑 <del>博客内添加 Comments (博客内无法获取访客登录态) </del> 
 
 ## 🔗 About
 本项目基于 [Mirror](https://github.com/LoeiFy/Mirror)，其创作者是 [LoeiFy](https://github.com/LoeiFy)。 
