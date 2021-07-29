@@ -38,7 +38,8 @@
     "start": "NODE_ENV=development webpack && webpack serve --open ",
     "build": "webpack",
     "watch": "webpack --watch",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "publish": "webpack && node ./pack.js"
   },
   "repository": {
     "type": "git",
