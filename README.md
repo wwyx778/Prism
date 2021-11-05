@@ -20,6 +20,7 @@
 ## 📝 Todo List
 💡 增加查询功能  
 💡 增加 Label 筛选  
+💡 使用命令行一键发布到自己的 Github 仓库  
 🗑 <del>博客内添加 Comments (博客内无法获取访客登录态) </del> 
 
 ## 🔗 About
