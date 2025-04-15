@@ -8,7 +8,7 @@
 
 ## 🕹 Use
 1. 下载 Prism 的最新版本
-2. 获取 hash
+2. [获取 hash](https://github.com/wwyx778/Prism/wiki)
 3. 修改 index.html
 
 ## 🎉 ChangeLog
